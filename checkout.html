@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout – Shaikh Luxe</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .checkout-container {
+      max-width: 600px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .checkout-container h2 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .checkout-container label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: bold;
+    }
+    .checkout-container input[type="text"],
+    .checkout-container input[type="file"],
+    .checkout-container textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    .checkout-container button {
+      margin-top: 25px;
+      padding: 12px;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      width: 100%;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .checkout-container button:hover {
+      background-color: #444;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Shaikh Luxe</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="checkout.html">Checkout</a>
+    </nav>
+  </header>
+
+  <div class="checkout-container">
+    <h2>Order Checkout</h2>
+
+    <form>
+      <label>Your Full Name</label>
+      <input type="text" placeholder="Enter your name" required />
+
+      <label>Shipping Address</label>
+      <textarea placeholder="Enter full address with city & postal code" required></textarea>
+
+      <label>Phone Number</label>
+      <input type="text" placeholder="03xx-xxxxxxx" required />
+
+      <label>Select Payment Method</label>
+      <select required>
+        <option value="">Choose...</option>
+        <option value="bank">Bank Transfer</option>
+        <option value="crypto">Crypto Payment (USDT)</option>
+      </select>
+
+      <label>Bank Details (UBL)</label>
+      <p><strong>Account Title:</strong> Hussain Farooq Qureshi</p>
+      <p><strong>Account Number:</strong> 1380203458651</p>
+      <p><strong>Bank:</strong>
