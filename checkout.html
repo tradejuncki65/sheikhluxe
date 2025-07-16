@@ -1,14 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shaikh Luxe - Checkout</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .checkout-container {
+      max-width: 500px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    form label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: 600;
+    }
+
+    form input, form textarea, form select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    form button {
+      padding: 12px;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      width: 100%;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    #responseMsg {
+      text-align: center;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    header {
+      background-color: #111;
+      padding: 15px;
+      text-align: center;
+      color: white;
+      font-size: 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    footer {
+      margin-top: 50px;
+      padding: 20px;
+      background: #111;
+      color: white;
+      text-align: center;
+      font-size: 14px;
+    }
+  </style>
+</head>
 <body>
+
   <header>
-    <div class="logo">Shaikh Luxe</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="checkout.html">Checkout</a>
-    </nav>
+    Shaikh Luxe Checkout
   </header>
 
   <div class="checkout-container">
-    <h2>Order Checkout</h2>
+    <h2>Order Form</h2>
 
     <form id="orderForm">
       <label>Your Full Name</label>
@@ -39,15 +103,14 @@
       <input type="text" id="hash" placeholder="Paste TX hash or Bank Ref No" />
 
       <button type="submit">Confirm Order</button>
-      <p id="responseMsg" style="text-align:center; margin-top:10px;"></p>
+      <p id="responseMsg"></p>
     </form>
   </div>
 
   <footer>
-    <p>&copy; 2025 Shaikh Luxe. All rights reserved.</p>
+    &copy; 2025 Shaikh Luxe. All rights reserved.
   </footer>
 
-  <!-- FORM SUBMIT SCRIPT -->
   <script>
     document.getElementById('orderForm').addEventListener('submit', function (e) {
       e.preventDefault();
@@ -79,5 +142,7 @@
     });
   </script>
 </body>
+</html>
+
 
 
